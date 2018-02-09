@@ -1,18 +1,24 @@
-package asi.fizaine.adrien.questionreponse;
+package questionreponse.Activities;
 
+import android.content.Context;
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import asi.fizaine.adrien.questionreponse.R;
+
 public class LoginActivity extends AppCompatActivity {
+    private static Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        context = this.getApplicationContext();
 
         /* Récup des champs de saisie */
         final EditText inputPseudo = (EditText) findViewById(R.id.inputPseudo);     // Pseudo
@@ -30,5 +36,9 @@ public class LoginActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+    }
+
+    public static Context getContext(){
+        return context;
     }
 }
