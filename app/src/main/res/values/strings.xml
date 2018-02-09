@@ -1,0 +1,8 @@
+<resources>
+    <!-- Application name -->
+    <string name="app_name">THE RIDDLER</string>
+
+    <!-- Buttons -->
+    <string name="connect">Se connecter</string>
+    <string name="createAccount">Créer un compte</string>
+</resources>
