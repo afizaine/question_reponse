@@ -50,7 +50,7 @@ public class UtilisateurADO {
         }
 
         ArrayList<Utilisateur> userList = new
-                ArrayList<Utilisateur> ();
+                ArrayList<> ();
         while (c.moveToNext()) {
             Utilisateur utilisateur = new Utilisateur();
             utilisateur.setId(c.getInt(0));
@@ -62,5 +62,29 @@ public class UtilisateurADO {
         }
         c.close();
         return userList;
+    }
+
+    public Utilisateur findUserByPseudo(String pseudo) {
+        SQLiteDatabase db = DataBaseManager.getInstance().openDatabase();
+
+        String whereClause = Utilisateur.KEY_Pseudo + " = ? ";
+        String[] whereArgs = {pseudo};
+
+        Cursor c = db.query(Utilisateur.TABLE, new String[]{Utilisateur.KEY_Pseudo}, whereClause, whereArgs, null, null, Utilisateur.KEY_UtilisateurID);
+
+        if (c.getCount() == 0) {
+            c.close();
+            return null;
+        } else {
+                Utilisateur utilisateur = new Utilisateur();
+                utilisateur.setId(c.getInt(0));
+                utilisateur.setPrenom((c.getString(1)));
+                utilisateur.setNom((c.getString(2)));
+                utilisateur.setPseudo((c.getString(3)));
+                utilisateur.setMdp((c.getString(4)));
+
+                c.close();
+                return utilisateur;
+        }
     }
 }

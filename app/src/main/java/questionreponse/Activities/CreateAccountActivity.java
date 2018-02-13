@@ -29,9 +29,6 @@ public class CreateAccountActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_account);
 
-        dbHelper = new DBHelper();
-        DataBaseManager.initializeInstance(dbHelper);
-
         /* Récupération des champs de saisie */
         final EditText inputPseudo = (EditText) findViewById(R.id.inputPseudo);                 // Pseudo
         final EditText inputMdp = (EditText) findViewById(R.id.inputPassword);                  // Mdp
