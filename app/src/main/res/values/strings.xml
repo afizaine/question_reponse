@@ -5,4 +5,8 @@
     <!-- Buttons -->
     <string name="connect">Se connecter</string>
     <string name="createAccount">Créer un compte</string>
+    <string name="themes">Vos Thêmes</string>
+    <string name="config">Configurations</string>
+    <string name="disconnect">Se déconnecter</string>
+    <string name="stats">Vos Statistiques</string>
 </resources>
