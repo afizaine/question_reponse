@@ -18,6 +18,7 @@
         
         <activity android:name="questionreponse.Activities.CreateAccountActivity"></activity>
         <activity android:name="questionreponse.Activities.MenuUtilisateurActivity"></activity>
+        <activity android:name="questionreponse.Activities.ThemeActivity"></activity>
     </application>
 
 </manifest>
