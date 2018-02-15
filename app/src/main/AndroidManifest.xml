@@ -19,6 +19,8 @@
         <activity android:name="questionreponse.Activities.CreateAccountActivity"></activity>
         <activity android:name="questionreponse.Activities.MenuUtilisateurActivity"></activity>
         <activity android:name="questionreponse.Activities.ThemeActivity"></activity>
+        <activity android:name="questionreponse.Activities.CreateThemeActivty"></activity>
+        <activity android:name="questionreponse.Activities.QuestionActivity"></activity>
     </application>
 
 </manifest>

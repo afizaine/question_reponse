@@ -9,4 +9,6 @@
     <string name="config">Configurations</string>
     <string name="disconnect">Se déconnecter</string>
     <string name="stats">Vos Statistiques</string>
+    <string name="add">Ajouter</string>
+    <string name="edit">Modifier</string>
 </resources>

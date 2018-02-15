@@ -14,8 +14,10 @@
         tools:listitem="@android:layout/simple_list_item_1" />
 
     <ImageButton
+        android:id="@+id/btnAdd"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:backgroundTint="@android:color/transparent"
         app:srcCompat="@drawable/btn_add" />
 
 </LinearLayout>
